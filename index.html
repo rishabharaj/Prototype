@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AaharMate</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #d1fae5, #ffffff, #fef9c3);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .section-title {
+      color: #065f46;
+    }
+    .card-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+  </style>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="container py-5">
+    <header class="text-center mb-5">
+      <h1 class="display-5 fw-bold section-title">AaharMate</h1>
+      <p class="text-muted fs-5">Discover nearby food with safety, nutrition & health insights</p>
+      <div class="d-flex justify-content-center gap-2 mt-3">
+        <input type="text" class="form-control w-50" placeholder="Search food or outlet...">
+        <button class="btn btn-success d-flex align-items-center">
+          <i data-lucide="search" class="me-2"></i> Search
+        </button>
+      </div>
+    </header>
+
+    <div class="row g-4">
+      <!-- Nearby Food Outlets -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 p-3">
+          <div class="d-flex align-items-center mb-2">
+            <i data-lucide="map-pin" class="text-primary card-icon"></i>
+            <div class="card-title">Discover Nearby Food</div>
+          </div>
+          <p class="text-muted">Explore food outlets around you with map-based navigation.</p>
+          <button class="btn btn-outline-primary mt-auto">View on Map</button>
+        </div>
+      </div>
+
+      <!-- Verified Safety Tags -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 p-3">
+          <div class="d-flex align-items-center mb-2">
+            <i data-lucide="shield-check" class="text-success card-icon"></i>
+            <div class="card-title">Verified Safety Tags</div>
+          </div>
+          <p class="text-muted">Look for trusted restaurants with verified hygiene and safety standards.</p>
+          <button class="btn btn-outline-success mt-auto">Learn More</button>
+        </div>
+      </div>
+
+      <!-- Food Descriptions -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 p-3">
+          <div class="d-flex align-items-center mb-2">
+            <i data-lucide="info" class="text-warning card-icon"></i>
+            <div class="card-title">Food Details</div>
+          </div>
+          <p class="text-muted">Get nutrition info, ingredients, and health impacts of food items.</p>
+          <button class="btn btn-outline-warning mt-auto">Explore Items</button>
+        </div>
+      </div>
+
+      <!-- AI Assistant -->
+      <div class="col-md-12 col-lg-4">
+        <div class="card h-100 p-3">
+          <div class="mb-2">
+            <div class="card-title text-purple">AI Health Assistant</div>
+          </div>
+          <p class="text-muted">Ask questions about allergies, diet suitability, or specific health conditions like diabetes.</p>
+          <button class="btn btn-primary mt-auto">Chat with AI</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
